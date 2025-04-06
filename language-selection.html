@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don't Kill Bob!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="language-selection">
+    <div id="language-selection">
+        <button id="spanish-button" onclick="chooseLanguage('Español')">Español</button>
+        <button id="english-button" onclick="chooseLanguage('English')">English</button>
+    </div>
+   
+    <script>
+        function chooseLanguage(language) {
+          if (language === 'Español') {
+            window.location.href = "rules-es.html"; // redirects to the spanish rules scene
+          } else {
+            window.location.href = "rules-en.html"; // redirects to the english rules scene
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrong Answer English</title>
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+<body class="wrong-en-screen">
+    <!-- english wrong scene, background image already included -->
+    <div id="wrong-en-screen">
+        <!-- retry english button -->
+        <button id="retry-en-button">Retry</button>
+    </div>
+
+    <script>
+        // action when clicking the "retry" button
+        document.getElementById("retry-en-button").onclick = function() {
+            window.location.href = "index.html"; // redirects to the start scene
+        };
+    </script>
+</body>
+</html>

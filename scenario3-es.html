@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 3 Spanish - Don't Kill Bob!</title>
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+
+<body class="scenario3-es-screen">
+    <!-- scenario 3 spanish scene, background image already included -->
+    <div id="scenario3-es-screen">
+        <!-- options for spanish buttons a b c d -->
+        <button id="option-button-es-a">A</button>
+        <button id="option-button-es-b">B</button>
+        <button id="option-button-es-c">C</button>
+        <button id="option-button-es-d">D</button>
+    </div>
+
+    <!-- script to handle button logic -->
+    <script>
+        // check if the answer is correct
+        function handleAnswer(selectedOption) {
+            const correctAnswer = 'B'; // A is the correct answer
+
+            if (selectedOption === correctAnswer) {
+                // correct answer: proceed to the next scenario
+                window.location.href = "win-es.html"; // redirect to the next scenario
+            } else {
+                // incorrect answer: redirect to the error scene
+                window.location.href = "wrong-es.html"; // redirect to the spanish version of wrong-es.html
+            }
+        }
+
+        // assigning click event listeners to the buttons
+        document.getElementById("option-button-es-a").onclick = function() {
+            handleAnswer('A');
+        };
+        document.getElementById("option-button-es-b").onclick = function() {
+            handleAnswer('B');
+        };
+        document.getElementById("option-button-es-c").onclick = function() {
+            handleAnswer('C');
+        };
+        document.getElementById("option-button-es-d").onclick = function() {
+            handleAnswer('D');
+        };
+    </script>
+</body>
+</html>

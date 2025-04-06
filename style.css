@@ -18,12 +18,12 @@ body.start-screen {
 
 #start-screen {
   position: absolute;
-  top: 40%; /* esto lo puedes ir ajustando según lo veas */
+  top: 40%; 
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* botton design start screen*/
+/* start button for start screen*/
 #start-button {
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -37,12 +37,92 @@ body.start-screen {
 }
 
 #start-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /*change the colour when hovering*/
   background-color: #b98a4c;
 }
 
-/* rules screen*/
-body.rules-screen {
+/*language screen*/
+body.language-selection {
+  background-image: url("assets/languageselection.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#language-selection {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* spanish button for rules screen*/
+#spanish-button {
+  width: 110px;
+  height: 60px;
+  margin-left: 120px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  margin-top: 500px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;  
+}
+
+#spanish-button:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
+  background-color: #b98a4c;
+}
+
+/* english button for rules screen*/
+#english-button {
+  width: 110px;
+  height: 60px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: -60px;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;  
+  
+}
+
+#english-button:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
+  background-color: #b98a4c;
+}
+
+
+
+
+
+/* SPANISH GAME*/
+/* spanish rules screen*/
+body.rules-es-screen {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -50,7 +130,7 @@ body.rules-screen {
   justify-content: center;
   align-items: center;
 
-  background-image: url("assets/rules.png"); /* Imagen para el escenario 1 */
+  background-image: url("assets/rules-es.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,14 +138,15 @@ body.rules-screen {
   overflow: hidden;
 }
 
-#rules-screen {
+#rules-es-screen {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#continue-button {
+/* continue button for spanish rules screen*/
+#continue-es-button {
   font-size: 1.5rem;
   padding: 12px 24px;
   border: none;
@@ -77,14 +158,15 @@ body.rules-screen {
   margin-top: 210px;
 }
 
-#continue-button:hover {
+#continue-es-button:hover {
   background-color: #b98a4c;
-  transform: scale(1.05);
+  transform: scale(1.05); /* change the colour when hovering*/
 }
 
-/* scenario 1 screen */
-body.scenario-1-screen {
-  background-image: url("assets/scenario1.png"); /* Imagen para el escenario 1 */
+
+/* scenario 1 spanish screen */
+body.scenario1-es-screen {
+  background-image: url("assets/scenario1-es.png"); 
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +182,7 @@ body.scenario-1-screen {
   align-items: center;
 }
 
-#scenario-1-screen {
+#scenario1-es-screen {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -108,79 +190,89 @@ body.scenario-1-screen {
 }
 
 
-/* Posiciones de los botones */
-#option-button-a {
-  font-size: 1.5rem;
-  padding: 12px 24px;
-  width: 40px;   /* Ancho del botón */
-  height: 40px;  /* Alto del botón */
-  margin-top: 100px;
-  margin-left: 30px;
+/* spanish button styles */
+#option-button-es-a,
+#option-button-es-b, 
+#option-button-es-c,
+#option-button-es-d {
+  position: absolute;
   border: none;
+  right: 300px;
+  left: -177px;
+  width: 40px;
+  height: 40px;
   border-radius: 8px;
   background-color: #d49e56;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  margin-top: 210px;
-}
-
-#option-button-b {
+  color: white;
   font-size: 1.5rem;
-  padding: 12px 24px;
-  width: 40px;   /* Ancho del botón */
-  height: 40px;  /* Alto del botón */
-  margin-top: 210px;
-  margin-left: 30px;
-  border: none;
-  border-radius: 8px;
-  background-color: #d49e56;
-  color: #ffffff;
   cursor: pointer;
-  transition: all 0.2s ease;
-  margin-top: 180px;
+  margin: 0;
 }
 
-#option-button-c {
-  font-size: 1.5rem;
-  padding: 12px 24px;
-  width: 40px;   /* Ancho del botón */
-  height: 40px;  /* Alto del botón */
-  margin-top: 240px;
-  margin-left: 30px;
-  border: none;
-  border-radius: 8px;
-  background-color: #d49e56;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  
+/* specific button positions for scenario 1 spanish scene */
+.scenario1-es-screen #option-button-es-a { 
+  top: 143px;
+  bottom: 30px;
+ }
+.scenario1-es-screen #option-button-es-b { 
+  top: 194px;
+  bottom: 30px;
+ }
+.scenario1-es-screen #option-button-es-c { 
+  top: 245px;
+  bottom: 30px;
+ }
+.scenario1-es-screen #option-button-es-d { 
+  top: 294px;
+  bottom: 60px;
+ }
+
+/* specific button positions for scenario 2 spanish scene */
+.scenario2-es-screen #option-button-es-a { 
+  top: -50px;
+  bottom: 30px;
+ }
+.scenario2-es-screen #option-button-es-b { 
+  top: 0px;
+  bottom: 30px;
+ }
+.scenario2-es-screen #option-button-es-c { 
+  top: 50px;
+  bottom: 30px;
+ }
+.scenario2-es-screen #option-button-es-d { 
+  top: 100px;
+  bottom: 60px;
+ }
+
+/* specific button positions for scenario 3 spanish scene */
+.scenario3-es-screen #option-button-es-a { 
+  top: -50px;
+  bottom: 30px;
+ }
+.scenario3-es-screen #option-button-es-b { 
+  top: 0px;
+  bottom: 30px;
+ }
+.scenario3-es-screen #option-button-es-c { 
+  top: 50px;
+  bottom: 30px;
+ }
+.scenario3-es-screen #option-button-es-d { 
+  top: 100px;
+  bottom: 60px;
+ }
+
+
+/* hover effect for buttons */
+#option-button-es-a:hover, #option-button-es-b:hover, #option-button-es-c:hover, #option-button-es-d:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
+  background-color: #b98a4c;  
 }
 
-#option-button-d {
-  font-size: 1.5rem;
-  padding: 12px 24px;
-  width: 40px;   /* Ancho del botón */
-  height: 40px;  /* Alto del botón */
-  margin-top: 300px;
-  margin-left: 30px;
-  border: none;
-  border-radius: 8px;
-  background-color: #d49e56;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-/* Efecto de hover para los botones */
-#option-button-a:hover, #option-button-b:hover, #option-button-c:hover, #option-button-d:hover {
-  transform: scale(1.05);
-  background-color: #b98a4c;  /* Cambia el color al pasar el cursor */
-}
-
-/* scenario 2 */
-body.scenario-2-screen {
-  background-image: url("assets/scenario2.png"); /* Imagen para el escenario 1 */
+/* scenario 2 screen*/
+body.scenario2-es-screen {
+  background-image: url("assets/scenario2-es.png"); 
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,16 +288,16 @@ body.scenario-2-screen {
   align-items: center;
 }
 
-#scenario-2-screen {
+#scenario2-es-screen {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* scenario 3 */
-body.scenario-3-screen {
-  background-image: url("assets/scenario3.png"); /* Imagen para el escenario 1 */
+/* scenario 3 screen */
+body.scenario3-es-screen {
+  background-image: url("assets/scenario3-es.png"); 
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -221,7 +313,7 @@ body.scenario-3-screen {
   align-items: center;
 }
 
-#scenario-3-screen {
+#scenario3-es-screen {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -229,9 +321,9 @@ body.scenario-3-screen {
 }
 
 
-/* Estilo para el fondo de wrong.html */
-body.wrong-screen {
-  background-image: url("assets/badending.png"); /* Imagen para el escenario 1 */
+/* spanish wrong screen */
+body.wrong-es-screen {
+  background-image: url("assets/badending-es.png"); 
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +339,7 @@ body.wrong-screen {
   align-items: center;
 }
 
-#wrong-screen {
+#wrong-es-screen {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -255,8 +347,90 @@ body.wrong-screen {
 }
 
 
-/* Estilo para el botón "Retry" */
-#retry-button {
+/* spanish retry button for wrong screen */
+#retry-es-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 170px;
+}
+
+#retry-es-button:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
+  background-color: #b98a4c;
+}
+
+/* spanish win screen */
+body.win-es-screen {
+  background-image: url("assets/ending-es.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* play again button for win screen */
+#play-again-es-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 365px;
+}
+
+#play-again-es-button:hover {
+  background-color: #b98a4c;
+  transform: scale(1.05); /*change the colour when hovering*/
+}
+
+
+
+
+/* ENGLISH GAME */
+/* english rules screen*/
+body.rules-en-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("assets/rules-en.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+#rules-en-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* continue button for english rules screen*/
+#continue-en-button {
   font-size: 1.5rem;
   padding: 12px 24px;
   border: none;
@@ -268,14 +442,215 @@ body.wrong-screen {
   margin-top: 210px;
 }
 
-#retry-button:hover {
-  transform: scale(1.05);
+#continue-en-button:hover {
+  background-color: #b98a4c;
+  transform: scale(1.05); /* change the colour when hovering*/
+}
+
+
+/* scenario 1 english screen */
+body.scenario1-en-screen {
+  background-image: url("assets/scenario1-en.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario1-en-screen {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* english button styles */
+#option-button-en-a,
+#option-button-en-b, 
+#option-button-en-c,
+#option-button-en-d {
+  position: absolute;
+  border: none;
+  right: 300px;
+  left: -177px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* specific button positions for scenario 1 english scene */
+.scenario1-en-screen #option-button-en-a { 
+  top: 143px;
+  bottom: 30px;
+ }
+.scenario1-en-screen #option-button-en-b { 
+  top: 194px;
+  bottom: 30px;
+ }
+.scenario1-en-screen #option-button-en-c { 
+  top: 245px;
+  bottom: 30px;
+ }
+.scenario1-en-screen #option-button-en-d { 
+  top: 294px;
+  bottom: 60px;
+ }
+
+/* specific button positions for scenario 2 english scene */
+.scenario2-en-screen #option-button-en-a { 
+  top: -50px;
+  bottom: 30px;
+ }
+.scenario2-en-screen #option-button-en-b { 
+  top: 0px;
+  bottom: 30px;
+ }
+.scenario2-en-screen #option-button-en-c { 
+  top: 50px;
+  bottom: 30px;
+ }
+.scenario2-en-screen #option-button-en-d { 
+  top: 100px;
+  bottom: 60px;
+ }
+
+/* specific button positions for scenario 3 english scene */
+.scenario3-en-screen #option-button-en-a { 
+  top: -50px;
+  bottom: 30px;
+ }
+.scenario3-en-screen #option-button-en-b { 
+  top: 0px;
+  bottom: 30px;
+ }
+.scenario3-en-screen #option-button-en-c { 
+  top: 50px;
+  bottom: 30px;
+ }
+.scenario3-en-screen #option-button-en-d { 
+  top: 100px;
+  bottom: 60px;
+ }
+
+
+/* hover effect for buttons */
+#option-button-en-a:hover, #option-button-en-b:hover, #option-button-en-c:hover, #option-button-en-d:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
+  background-color: #b98a4c;  
+}
+
+/* scenario 2 screen*/
+body.scenario2-en-screen {
+  background-image: url("assets/scenario2-en.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario2-en-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* scenario 3 screen */
+body.scenario3-en-screen {
+  background-image: url("assets/scenario3-en.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario3-en-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* wrong english screen */
+body.wrong-en-screen {
+  background-image: url("assets/badending-en.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrong-en-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* retry button for wrong screen */
+#retry-en-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 210px;
+}
+
+#retry-en-button:hover {
+  transform: scale(1.05); /*change the colour when hovering*/
   background-color: #b98a4c;
 }
 
 /* win screen */
-body.win-screen {
-  background-image: url("assets/ending.png"); /* Imagen para el escenario 1 */
+body.win-en-screen {
+  background-image: url("assets/ending-en.png"); 
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,8 +666,8 @@ body.win-screen {
   align-items: center;
 }
 
-/* boton de play again */
-#play-again-button {
+/* play again button for win screen */
+#play-again-en-button {
   font-size: 1.5rem;
   padding: 12px 24px;
   border: none;
@@ -301,10 +676,10 @@ body.win-screen {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-top: 320px;
+  margin-top: 365px;
 }
 
-#play-again-button:hover {
+#play-again-en-button:hover {
   background-color: #b98a4c;
-  transform: scale(1.05);
+  transform: scale(1.05); /*change the colour when hovering*/
 }
