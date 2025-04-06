@@ -1,0 +1,310 @@
+/*start screen*/
+body.start-screen {
+  background-image: url("assets/welcome.png"); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-screen {
+  position: absolute;
+  top: 40%; /* esto lo puedes ir ajustando según lo veas */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* botton design start screen*/
+#start-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 300px;
+}
+
+#start-button:hover {
+  transform: scale(1.05);
+  background-color: #b98a4c;
+}
+
+/* rules screen*/
+body.rules-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("assets/rules.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+#rules-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#continue-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 210px;
+}
+
+#continue-button:hover {
+  background-color: #b98a4c;
+  transform: scale(1.05);
+}
+
+/* scenario 1 screen */
+body.scenario-1-screen {
+  background-image: url("assets/scenario1.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario-1-screen {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Posiciones de los botones */
+#option-button-a {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  width: 40px;   /* Ancho del botón */
+  height: 40px;  /* Alto del botón */
+  margin-top: 100px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 210px;
+}
+
+#option-button-b {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  width: 40px;   /* Ancho del botón */
+  height: 40px;  /* Alto del botón */
+  margin-top: 210px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 180px;
+}
+
+#option-button-c {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  width: 40px;   /* Ancho del botón */
+  height: 40px;  /* Alto del botón */
+  margin-top: 240px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+}
+
+#option-button-d {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  width: 40px;   /* Ancho del botón */
+  height: 40px;  /* Alto del botón */
+  margin-top: 300px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efecto de hover para los botones */
+#option-button-a:hover, #option-button-b:hover, #option-button-c:hover, #option-button-d:hover {
+  transform: scale(1.05);
+  background-color: #b98a4c;  /* Cambia el color al pasar el cursor */
+}
+
+/* scenario 2 */
+body.scenario-2-screen {
+  background-image: url("assets/scenario2.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario-2-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* scenario 3 */
+body.scenario-3-screen {
+  background-image: url("assets/scenario3.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scenario-3-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Estilo para el fondo de wrong.html */
+body.wrong-screen {
+  background-image: url("assets/badending.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrong-screen {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Estilo para el botón "Retry" */
+#retry-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 210px;
+}
+
+#retry-button:hover {
+  transform: scale(1.05);
+  background-color: #b98a4c;
+}
+
+/* win screen */
+body.win-screen {
+  background-image: url("assets/ending.png"); /* Imagen para el escenario 1 */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* boton de play again */
+#play-again-button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 320px;
+}
+
+#play-again-button:hover {
+  background-color: #b98a4c;
+  transform: scale(1.05);
+}
