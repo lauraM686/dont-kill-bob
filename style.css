@@ -36,7 +36,6 @@ body.start-screen {
   margin-top: 290px;
 }
 
-
 #start-button:hover {
   transform: scale(1.05); /*change the colour when hovering*/
   background-color: #b98a4c;
