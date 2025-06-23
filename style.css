@@ -33,7 +33,7 @@ body.start-screen {
   color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-top: 250px;
+  margin-top: 290px;
 }
 
 /* start button for start screen*/
@@ -88,7 +88,7 @@ body.language-selection {
   margin-left: 120px;
   padding: 12px 24px;
   font-size: 1.5rem;
-  margin-top: 500px;
+  margin-top: 460px;
   border: none;
   border-radius: 8px;
   background-color: #d49e56;
