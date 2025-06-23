@@ -33,7 +33,7 @@ body.start-screen {
   color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 #start-button:hover {
