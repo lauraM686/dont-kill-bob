@@ -33,7 +33,23 @@ body.start-screen {
   color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-top: 50px;
+  margin-top: 250px;
+}
+
+/* start button for start screen*/
+#start-button {
+  padding: 2vmin 4vmin; 
+  font-size: 3vmin; 
+  border: none;
+  border-radius: 1vmin; 
+  background-color: #d49e56;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15vmin; 
+  width: 25vmin; 
+  min-width: 120px; 
+  text-align: center;
 }
 
 #start-button:hover {
@@ -53,7 +69,6 @@ body.language-selection {
   padding: 0;
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +88,7 @@ body.language-selection {
   margin-left: 120px;
   padding: 12px 24px;
   font-size: 1.5rem;
-  margin-top: 700px;
+  margin-top: 500px;
   border: none;
   border-radius: 8px;
   background-color: #d49e56;
@@ -103,7 +118,7 @@ body.language-selection {
   color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-top: -90px;
+  margin-top: -60px;
   display: flex;
   align-items: center;    
   justify-content: center; 
